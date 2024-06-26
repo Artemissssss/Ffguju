@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.header-row {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.day-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    background: #444;
+    color: #fff;
+}
+
+.day {
+    padding: 10px;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 45px;
+    gap: 2px;
+}
+
+.time-slot {
+    background: #ddd;
+    text-align: right;
+    padding-right: 5px;
+    grid-column: 1 / -1;
+    border-bottom: 1px solid #bbb;
+}
+
+.class-cell {
+    background: #ffab00;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+footer div {
+    flex: 1;
+    text-align: center;
+}

@@ -18,6 +18,20 @@ header {
     color: #fff;
 }
 
+header .time {
+    font-size: 16px;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+}
+
+header .icon {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 main {
     display: grid;
     grid-template-rows: auto auto 1fr;
@@ -28,6 +42,7 @@ main {
     color: #fff;
     text-align: center;
     padding: 5px;
+    font-size: 18px;
 }
 
 .day-row {
@@ -36,6 +51,7 @@ main {
     text-align: center;
     background: #444;
     color: #fff;
+    font-size: 14px;
 }
 
 .day {
@@ -53,18 +69,52 @@ main {
     background: #ddd;
     text-align: right;
     padding-right: 5px;
-    grid-column: 1 / -1;
     border-bottom: 1px solid #bbb;
+    font-size: 12px;
+    color: #555;
 }
 
 .class-cell {
-    background: #ffab00;
-    color: #000;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
 }
+
+.crossed {
+    text-decoration: line-through;
+}
+
+/* Specific class styles */
+.ph {
+    background: #c0392b;
+    color: #fff;
+}
+
+.e {
+    background: #3498db;
+    color: #fff;
+}
+
+.bio-bili {
+    background: #e67e22;
+    color: #fff;
+}
+
+.m {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.g {
+    background: #e74c3c;
+    color: #fff;
+}
+
+/* Add more specific class styles as needed */
 
 footer {
     background: #333;
@@ -72,6 +122,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    font-size: 14px;
 }
 
 footer div {
